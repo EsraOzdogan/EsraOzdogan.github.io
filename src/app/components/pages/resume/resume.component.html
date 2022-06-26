@@ -1,0 +1,66 @@
+<section id="resume" class="resume">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Resume</h2>
+            <p>Check My Resume</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="resume-title">Sumary</h3>
+                <div class="resume-item pb-0">
+                    <h4>{{user.firstName + " " + user.lastName}}</h4>
+                    <p><em>{{user.about}}</em></p>
+                    <p>
+                        <ul>
+                            <li>{{user.city}}</li>
+                            <li>{{user.phone}}</li>
+                            <li>{{user.email}}</li>
+                        </ul>
+                </div>
+
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                    <h4>{{user.education.university.department}}</h4>
+                    <h5>{{user.education.university.year}}</h5>
+                    <p><em>{{user.education.university.name}}</em></p>
+                    <p>{{user.education.university.description}}</p>
+                    <p>{{user.education.university.gpa}}</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="resume-title">Experience</h3>
+                <div class="resume-item">
+                    <h4>{{user.experience.e1.title}}</h4>
+                    <h5>{{user.experience.e1.date}}</h5>
+                    <p><em>{{user.city}} </em></p>
+                    <p>
+                        <ul>
+                            <li>{{user.experience.e1.description}}</li>
+                        </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>{{user.experience.e2.title}}</h4>
+                    <h5>{{user.experience.e2.date}}</h5>
+                    <p><em>{{user.city}}</em></p>
+                    <p>
+                        <ul>
+                            <li>{{user.experience.e2.description}}</li>
+                        </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>{{user.experience.e3.title}}</h4>
+                    <h5>{{user.experience.e3.date}}</h5>
+                    <p><em>{{user.city}}</em></p>
+                    <p>
+                        <ul>
+                            <li>{{user.experience.e3.description}}</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Resume Section -->
